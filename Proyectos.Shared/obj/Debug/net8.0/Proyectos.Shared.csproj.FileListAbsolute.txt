@@ -1,0 +1,12 @@
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\bin\Debug\net8.0\Proyectos.Shared.deps.json
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\bin\Debug\net8.0\Proyectos.Shared.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\bin\Debug\net8.0\Proyectos.Shared.pdb
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.AssemblyInfoInputs.cache
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.AssemblyInfo.cs
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.csproj.CoreCompileInputs.cache
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.sourcelink.json
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\refint\Proyectos.Shared.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.pdb
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\ref\Proyectos.Shared.dll
