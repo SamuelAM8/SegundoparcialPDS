@@ -12,7 +12,7 @@ namespace Proyectos.API.Data
         }
 
         public DbSet<Investigadores>Investigadoress{ get; set; }
-        public DbSet<Proyecto_de_Investigación_Científica>proyecto_De_Investigación_Científicas { get; set; }
+        public DbSet<ProyectodeInvestigaciónCientífica>proyectoDeInvestigaciónCientíficas { get; set; }
         public DbSet<ActividadesdeInvestigacion> actividadesde_Investigaciones { get; set; }
 
         public DbSet<Publicaciones> publicacioness{ get; set;}

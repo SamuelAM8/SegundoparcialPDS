@@ -1,1 +1,372 @@
-[]
+[
+  {
+    "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
+    "Method": "Get",
+    "RelativePath": "api/Actividadesinvestigacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
+    "Method": "Post",
+    "RelativePath": "api/Actividadesinvestigacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proyectoDeInvestigaci\u00F3nCient\u00EDficas",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
+    "Method": "Put",
+    "RelativePath": "api/Actividadesinvestigacion",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
+    "Method": "Get",
+    "RelativePath": "api/Actividadesinvestigacion/id:int",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
+    "Method": "Delete",
+    "RelativePath": "api/Actividadesinvestigacion/id:int",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.InvestigadoresController",
+    "Method": "Get",
+    "RelativePath": "api/Investigadores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.InvestigadoresController",
+    "Method": "Post",
+    "RelativePath": "api/Investigadores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Investigadores",
+        "Type": "Proyectos.Shared.Entities.Investigadores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.InvestigadoresController",
+    "Method": "Put",
+    "RelativePath": "api/Investigadores",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Investigadores",
+        "Type": "Proyectos.Shared.Entities.Investigadores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.InvestigadoresController",
+    "Method": "Get",
+    "RelativePath": "api/Investigadores/id:int",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.InvestigadoresController",
+    "Method": "Delete",
+    "RelativePath": "api/Investigadores/id:int",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.ProyinvcientController",
+    "Method": "Get",
+    "RelativePath": "api/proyectoDeInvestigaci\u00F3nCient\u00EDfica",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.ProyinvcientController",
+    "Method": "Post",
+    "RelativePath": "api/proyectoDeInvestigaci\u00F3nCient\u00EDfica",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.ProyinvcientController",
+    "Method": "Put",
+    "RelativePath": "api/proyectoDeInvestigaci\u00F3nCient\u00EDfica",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.ProyinvcientController",
+    "Method": "Get",
+    "RelativePath": "api/proyectoDeInvestigaci\u00F3nCient\u00EDfica/id:int",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.ProyinvcientController",
+    "Method": "Delete",
+    "RelativePath": "api/proyectoDeInvestigaci\u00F3nCient\u00EDfica/id:int",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.publicacionesController",
+    "Method": "Get",
+    "RelativePath": "api/publicaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.publicacionesController",
+    "Method": "Post",
+    "RelativePath": "api/publicaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicaciones",
+        "Type": "Proyectos.Shared.Entities.Publicaciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.publicacionesController",
+    "Method": "Put",
+    "RelativePath": "api/publicaciones",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicaciones",
+        "Type": "Proyectos.Shared.Entities.Publicaciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.publicacionesController",
+    "Method": "Get",
+    "RelativePath": "api/publicaciones/id:int",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.publicacionesController",
+    "Method": "Delete",
+    "RelativePath": "api/publicaciones/id:int",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "Method": "Get",
+    "RelativePath": "api/recursos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "Method": "Post",
+    "RelativePath": "api/recursos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RecursosEspecializados",
+        "Type": "Proyectos.Shared.Entities.RecursosEspecializados",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "Method": "Put",
+    "RelativePath": "api/recursos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RecursosEspecializados",
+        "Type": "Proyectos.Shared.Entities.RecursosEspecializados",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "Method": "Get",
+    "RelativePath": "api/recursos/id:int",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "Method": "Delete",
+    "RelativePath": "api/recursos/id:int",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
