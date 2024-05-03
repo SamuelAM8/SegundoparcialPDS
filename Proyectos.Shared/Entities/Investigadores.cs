@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Proyectos.Shared.Entities
@@ -27,5 +28,9 @@ namespace Proyectos.Shared.Entities
         [MaxLength(50, ErrorMessage = "la {0}  no puede tener mas de {1} caracteres")]
         [Required(ErrorMessage = "Este campo es obligatorio!!")]
         public string Afiliacion { get; set; }
+
+        [JsonIgnore]
+        public ICollection<ProyectodeInvestigacionCientifica> ProyectodeInvestigacionCientificas { get; set; }
+
     }
 }

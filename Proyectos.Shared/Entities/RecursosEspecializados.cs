@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Proyectos.Shared.Entities
@@ -31,7 +32,13 @@ namespace Proyectos.Shared.Entities
         [Required(ErrorMessage = "Este campo es obligatorio!")]
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime Fechadeentrega { get; set; }
+
+        [JsonIgnore]
+        public ICollection<ActividadesdeInvestigacion> ActividadesdeInvestigacions { get; set; }
+
         
+
+
 
 
 

@@ -8,7 +8,7 @@ namespace Proyectos.API.Controllers
 
     [ApiController]
     [Route("/api/Investigadores")]
-    public class InvestigadoresController: ControllerBase
+    public class InvestigadoresController : ControllerBase
     {
 
         private readonly DataContext _context;
@@ -19,7 +19,7 @@ namespace Proyectos.API.Controllers
         }
 
 
-       
+
         [HttpGet]
         public async Task<ActionResult> Get()
         {
@@ -29,7 +29,7 @@ namespace Proyectos.API.Controllers
         }
 
 
-       
+
         [HttpPost]
 
         public async Task<ActionResult> Post(Investigadores Investigadores)
@@ -41,7 +41,7 @@ namespace Proyectos.API.Controllers
         }
 
         //https://localhost:7000/api/Investigadores/id:int?id=1
-        [HttpGet("id:int")]
+        [HttpGet("{id:int}")]
 
         public async Task<ActionResult> Get(int id)
         {

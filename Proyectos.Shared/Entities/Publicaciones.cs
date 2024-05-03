@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Proyectos.Shared.Entities
@@ -27,5 +28,11 @@ namespace Proyectos.Shared.Entities
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm}", ApplyFormatInEditMode = true)]
 
         public DateTime Fechapublicacion { get; set; }
+
+
+        [JsonIgnore]
+        public ICollection<ProyectodeInvestigacionCientifica> ProyectodeInvestigacionCientificas { get; set; }
     }
+
+
 }

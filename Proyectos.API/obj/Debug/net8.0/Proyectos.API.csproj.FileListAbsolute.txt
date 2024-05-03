@@ -137,3 +137,9 @@ C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\obj\Debug\net8.0\Proyectos.API.ge
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\obj\Debug\net8.0\ref\Proyectos.API.dll
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Proyectos.Shared.dll
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Proyectos.Shared.pdb
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

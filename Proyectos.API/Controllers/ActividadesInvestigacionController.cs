@@ -19,20 +19,20 @@ namespace Proyectos.API.Controllers
         }
 
 
-        
+
         [HttpGet]
         public async Task<ActionResult> Get()
         {
 
 
-            return Ok(await _context.proyectoDeInvestigaciónCientíficas.ToListAsync());
+            return Ok(await _context.proyectoDeInvestigacionCientificas.ToListAsync());
         }
 
 
         //Método POST- insertar en base de datos
         [HttpPost]
 
-        public async Task<ActionResult> Post(ProyectodeInvestigaciónCientífica proyectoDeInvestigaciónCientíficas)
+        public async Task<ActionResult> Post(ProyectodeInvestigacionCientifica proyectoDeInvestigaciónCientíficas)
         {
 
             _context.Add(proyectoDeInvestigaciónCientíficas);
@@ -42,20 +42,20 @@ namespace Proyectos.API.Controllers
 
 
         //https://localhost:7000/api/Actividadesinvestigacion/id:int?id=1
-        [HttpGet("id:int")]
+        [HttpGet("{id:int}")]
 
         public async Task<ActionResult> Get(int id)
         {
 
-            var Proyecto_de_Investigación_Científica = await _context.proyectoDeInvestigaciónCientíficas.FirstOrDefaultAsync(x => x.Id == id);
-            if (Proyecto_de_Investigación_Científica == null)
+            var Proyecto_de_Investigacion_Cientifica = await _context.proyectoDeInvestigacionCientificas.FirstOrDefaultAsync(x => x.Id == id);
+            if (Proyecto_de_Investigacion_Cientifica == null)
             {
 
 
                 return NotFound();  //404
             }
 
-            return Ok(Proyecto_de_Investigación_Científica);//200
+            return Ok(Proyecto_de_Investigacion_Cientifica);//200
 
 
         }
@@ -66,12 +66,12 @@ namespace Proyectos.API.Controllers
         //Método PUT- actualizar datos 
         [HttpPut]
 
-        public async Task<ActionResult> Put(ProyectodeInvestigaciónCientífica ProyectodeInvestigaciónCientífica)
+        public async Task<ActionResult> Put(ProyectodeInvestigacionCientifica ProyectodeInvestigacionCientifica)
         {
 
-            _context.Update(ProyectodeInvestigaciónCientífica);
+            _context.Update(ProyectodeInvestigacionCientifica);
             await _context.SaveChangesAsync();
-            return Ok(ProyectodeInvestigaciónCientífica);
+            return Ok(ProyectodeInvestigacionCientifica);
         }
 
         //Delete - Eliminar registros
@@ -81,7 +81,7 @@ namespace Proyectos.API.Controllers
         public async Task<ActionResult> Delete(int id)
         {
 
-            var filasafectadas = await _context.proyectoDeInvestigaciónCientíficas
+            var filasafectadas = await _context.proyectoDeInvestigacionCientificas
                 .Where(x => x.Id == id)
                 .ExecuteDeleteAsync();
 

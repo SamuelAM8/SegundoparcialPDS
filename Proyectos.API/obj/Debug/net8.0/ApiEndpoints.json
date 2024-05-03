@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "proyectoDeInvestigaci\u00F3nCient\u00EDficas",
-        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigacionCientifica",
         "IsRequired": true
       }
     ],
@@ -34,8 +34,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
-        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Name": "ProyectodeInvestigacionCientifica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigacionCientifica",
         "IsRequired": true
       }
     ],
@@ -44,7 +44,7 @@
   {
     "ContainingType": "Proyectos.API.Controllers.Actividadesinvestigacion",
     "Method": "Get",
-    "RelativePath": "api/Actividadesinvestigacion/id:int",
+    "RelativePath": "api/Actividadesinvestigacion/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,7 +52,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -166,8 +166,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
-        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Name": "ProyectodeInvestigacionCientifica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigacionCientifica",
         "IsRequired": true
       }
     ],
@@ -182,8 +182,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ProyectodeInvestigaci\u00F3nCient\u00EDfica",
-        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigaci\u00F3nCient\u00EDfica",
+        "Name": "ProyectodeInvestigacionCientifica",
+        "Type": "Proyectos.Shared.Entities.ProyectodeInvestigacionCientifica",
         "IsRequired": true
       }
     ],
@@ -296,7 +296,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "ContainingType": "Proyectos.API.Controllers.RecursosEspecializadosContro",
     "Method": "Get",
     "RelativePath": "api/recursos",
     "HttpMethod": "GET",
@@ -306,7 +306,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "ContainingType": "Proyectos.API.Controllers.RecursosEspecializadosContro",
     "Method": "Post",
     "RelativePath": "api/recursos",
     "HttpMethod": "POST",
@@ -314,7 +314,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "RecursosEspecializados",
+        "Name": "recursosEspecializados",
         "Type": "Proyectos.Shared.Entities.RecursosEspecializados",
         "IsRequired": true
       }
@@ -322,7 +322,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "ContainingType": "Proyectos.API.Controllers.RecursosEspecializadosContro",
     "Method": "Put",
     "RelativePath": "api/recursos",
     "HttpMethod": "PUT",
@@ -330,7 +330,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "RecursosEspecializados",
+        "Name": "recursosEspecializados",
         "Type": "Proyectos.Shared.Entities.RecursosEspecializados",
         "IsRequired": true
       }
@@ -338,9 +338,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "ContainingType": "Proyectos.API.Controllers.RecursosEspecializadosContro",
     "Method": "Get",
-    "RelativePath": "api/recursos/id:int",
+    "RelativePath": "api/recursos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -348,15 +348,15 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Proyectos.API.Controllers.recursosController",
+    "ContainingType": "Proyectos.API.Controllers.RecursosEspecializadosContro",
     "Method": "Delete",
-    "RelativePath": "api/recursos/id:int",
+    "RelativePath": "api/recursos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -364,7 +364,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

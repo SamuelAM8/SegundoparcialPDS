@@ -10,3 +10,6 @@ C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Sha
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\refint\Proyectos.Shared.dll
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.pdb
 C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\ref\Proyectos.Shared.dll
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\bin\Debug\net8.0\Proyectos.Shared.runtimeconfig.json
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.genruntimeconfig.cache
+C:\Pacial2PDS\Proyectosdeinvcien\Proyectos.Shared\obj\Debug\net8.0\Proyectos.Shared.csproj.AssemblyReference.cache

@@ -25,18 +25,18 @@ namespace Proyectos.API.Controllers
         {
 
 
-            return Ok(await _context.proyectoDeInvestigaciónCientíficas.ToListAsync());
+            return Ok(await _context.proyectoDeInvestigacionCientificas.ToListAsync());
         }
 
 
         [HttpPost]
 
-        public async Task<ActionResult> Post(ProyectodeInvestigaciónCientífica ProyectodeInvestigaciónCientífica)
+        public async Task<ActionResult> Post(ProyectodeInvestigacionCientifica ProyectodeInvestigacionCientifica)
         {
 
-            _context.Add(ProyectodeInvestigaciónCientífica);
+            _context.Add(ProyectodeInvestigacionCientifica);
             await _context.SaveChangesAsync();
-            return Ok(ProyectodeInvestigaciónCientífica);
+            return Ok(ProyectodeInvestigacionCientifica);
         }
 
         
@@ -45,15 +45,15 @@ namespace Proyectos.API.Controllers
         public async Task<ActionResult> Get(int id)
         {
 
-            var ProyectodeInvestigaciónCientífica = await _context.proyectoDeInvestigaciónCientíficas.FirstOrDefaultAsync(x => x.Id == id);
-            if (ProyectodeInvestigaciónCientífica == null)
+            var ProyectodeInvestigacionCientifica = await _context.proyectoDeInvestigacionCientificas.FirstOrDefaultAsync(x => x.Id == id);
+            if (ProyectodeInvestigacionCientifica == null)
             {
 
 
                 return NotFound();  //404
             }
 
-            return Ok(ProyectodeInvestigaciónCientífica);//200
+            return Ok(ProyectodeInvestigacionCientifica);//200
 
 
         }
@@ -64,12 +64,12 @@ namespace Proyectos.API.Controllers
          
         [HttpPut]
 
-        public async Task<ActionResult> Put(ProyectodeInvestigaciónCientífica ProyectodeInvestigaciónCientífica)
+        public async Task<ActionResult> Put(ProyectodeInvestigacionCientifica ProyectodeInvestigacionCientifica)
         {
 
-            _context.Update(ProyectodeInvestigaciónCientífica);
+            _context.Update(ProyectodeInvestigacionCientifica);
             await _context.SaveChangesAsync();
-            return Ok(ProyectodeInvestigaciónCientífica);
+            return Ok(ProyectodeInvestigacionCientifica);
         }
 
         
@@ -79,7 +79,7 @@ namespace Proyectos.API.Controllers
         public async Task<ActionResult> Delete(int id)
         {
 
-            var filasafectadas = await _context.proyectoDeInvestigaciónCientíficas
+            var filasafectadas = await _context.proyectoDeInvestigacionCientificas
                 .Where(x => x.Id == id)
                 .ExecuteDeleteAsync();
 

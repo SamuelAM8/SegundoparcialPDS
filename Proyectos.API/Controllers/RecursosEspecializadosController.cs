@@ -7,55 +7,52 @@ namespace Proyectos.API.Controllers
 {
 
     [ApiController]
-    [Route("/api/recursos")] 
-    public class recursosController : ControllerBase
+    [Route("/api/recursos")]
+    public class RecursosEspecializadosContro : ControllerBase
     {
 
         private readonly DataContext _context;
 
-        public recursosController(DataContext context)
+        public RecursosEspecializadosContro(DataContext context)
         {
+
+
+
             _context = context;
         }
 
-
-        
+        // Método Get- LISTA
         [HttpGet]
         public async Task<ActionResult> Get()
         {
 
+            return Ok(await _context.RecursosEspecializadoss.ToListAsync());
 
-            return Ok(await _context.RecursosEspecializadoss.ToListAsync()); 
+
         }
 
 
-        //Método POST- insertar en base de datos
-        [HttpPost]
 
-        public async Task<ActionResult> Post(RecursosEspecializados RecursosEspecializados)
-        {
-
-            _context.Add(RecursosEspecializados);
-            await _context.SaveChangesAsync();
-            return Ok(RecursosEspecializados);
-        }
-
-        //GEt por párametro- select * from Owners where id=1
-        //https://localhost:7000/api/recursos/id:int?id=1
-        [HttpGet("id:int")]
-
+        // Método Get- por Id
+        [HttpGet("{id:int}")]
         public async Task<ActionResult> Get(int id)
         {
 
-            var recursos = await _context.RecursosEspecializadoss.FirstOrDefaultAsync(x => x.Id == id);
-            if (recursos == null)
+
+
+            var recurso = await _context.RecursosEspecializadoss.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (recurso == null)
             {
 
 
-                return NotFound();  //404
+                return NotFound();
+
             }
 
-            return Ok(recursos);//200
+
+
+            return Ok(recurso);
 
 
         }
@@ -63,40 +60,61 @@ namespace Proyectos.API.Controllers
 
 
 
-        //Método PUT- actualizar datos 
-        [HttpPut]
 
-        public async Task<ActionResult> Put(RecursosEspecializados RecursosEspecializados)
+
+        [HttpPost]
+        public async Task<ActionResult> Post(RecursosEspecializados recursosEspecializados)
         {
 
-            _context.Update(RecursosEspecializados);
+            _context.Add(recursosEspecializados);
             await _context.SaveChangesAsync();
-            return Ok(RecursosEspecializados);
+            return Ok(recursosEspecializados);
+
+
+
         }
 
-        //Delete - Eliminar registros
 
-        [HttpDelete("id:int")]
 
+        // Método actualizar
+        [HttpPut]
+
+        public async Task<ActionResult> Put(RecursosEspecializados recursosEspecializados)
+        {
+
+            _context.Update(recursosEspecializados);
+            await _context.SaveChangesAsync();
+            return Ok(recursosEspecializados);
+
+
+
+        }
+
+
+        //Médoro eliminar registro
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {
 
-            var filasafectadas = await _context.RecursosEspecializadoss
+
+
+            var Filasafectadas = await _context.RecursosEspecializadoss
+
                 .Where(x => x.Id == id)
                 .ExecuteDeleteAsync();
 
-            if (filasafectadas == 0)
+            if (Filasafectadas == 0)
             {
 
 
-                return NotFound();  //404
+                return NotFound();
+
             }
 
-            return NoContent();//204
 
+            return NoContent();
 
         }
-
     }
 
 }
