@@ -12,7 +12,7 @@
 }
 else
 {
-    <InvestigadoresForm @ref="investigadoresForm"  Investigadores="investigadores" OnValidSubmit="Editar" ReturnAction="Return"/>
+    <InvestigadoresForm @ref="InvestigadoresForm"  Investigadores="investigadores" OnValidSubmit="Editar" ReturnAction="Return"/>
 
 }
 
@@ -21,7 +21,7 @@ else
     [Parameter]
     public int Id { get; set; }
     private Investigadores investigadores;
-    private InvestigadoresForm investigadoresForm;
+    private InvestigadoresForm InvestigadoresForm;
 
     protected override async Task OnParametersSetAsync()
     {
@@ -68,7 +68,7 @@ else
 
     private void Return()
     {
-        investigadoresForm!.FormularioPosteadoConExito = true;
+        InvestigadoresForm!.FormularioPosteadoConExito = true;
         navigationManager.NavigateTo("/investigadores");
     }
 

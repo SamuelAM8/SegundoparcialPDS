@@ -1,15 +1,19 @@
-﻿@page "/investigadores/create"
-@inject NavigationManager navigationManager
-@inject IRepository repository
+﻿﻿ 
+@page "/investigadores/create"
+@using Proyectos.Shared.Entities
+@using Proyectos.web.Repositories
+
 @inject SweetAlertService sweetAlertService
+@inject IRepository repository
+@inject NavigationManager navigationManager
 
 <h3>Crear</h3>
 
-<InvestigadoresForm @ref="investigadoresForm"  Investigadores="investigadores" OnValidSubmit="Create" ReturnAction="Return"/>
+<InvestigadoresForm @ref="InvestigadoresForm" Investigadores="investigadores" OnValidSubmit="Create" ReturnAction="Return" />
 
 @code {
-    private Investigadores investigadores= new Investigadores;
-    private InvestigadoresForm investigadoresForm;
+    private Investigadores investigadores = new Investigadores();
+    private InvestigadoresForm InvestigadoresForm;
 
 
 
@@ -53,8 +57,8 @@
 
 
 
-        ownerForm!.FormularioPosteadoConExito = true;
-        navigationManager.NavigateTo("/investigadores");
+        InvestigadoresForm!.FormularioPosteadoConExito = true;
+        navigationManager.NavigateTo("investigadores");
 
 
 
@@ -62,4 +66,5 @@
     }
 
 
+}
 }
